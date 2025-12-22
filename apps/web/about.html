@@ -3,103 +3,149 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About — YourName</title>
+    <title>プロフィール — YourName</title>
+    <link rel="icon" href="/static/neko.png" type="image/png" />
     <link rel="stylesheet" href="/static/app.css" />
   </head>
-  <body data-theme="autumn" class="min-h-screen text-base-content">
-    <div class="page-bg">
-      <header class="max-w-5xl mx-auto px-6 pt-6">
-        <div class="navbar glass rounded-2xl shadow-lg shadow-base-300/40">
-          <div class="flex-1 items-center gap-3">
-            <a class="btn btn-ghost text-xl font-display" href="/">YourName</a>
-            <span class="hidden md:inline text-xs uppercase tracking-[0.2em] text-neutral/60">
-              About
-            </span>
+  <body class="bg-grid">
+    <div class="min-h-screen relative">
+      <div class="pointer-events-none absolute inset-0 z-0 opacity-70">
+        <div class="sticker sticker-pop sticker-float absolute left-4 top-24 h-20 w-20 rotate-[-5deg] md:left-6 md:h-24 md:w-24">
+          <img class="h-full w-full rounded-full object-cover" src="/static/neko.png" alt="キャラクター 1" />
+        </div>
+        <div class="sticker sticker-pop sticker-wiggle absolute right-4 top-56 h-16 w-16 rotate-[6deg] md:right-10 md:h-20 md:w-20">
+          <img class="h-full w-full rounded-full object-cover" src="/static/usagi.png" alt="キャラクター 2" />
+        </div>
+        <div class="sticker sticker-pop absolute left-8 bottom-24 hidden h-24 w-24 rotate-[8deg] lg:block">
+          <img class="h-full w-full rounded-full object-cover" src="/static/pengin.png" alt="キャラクター 3" />
+        </div>
+      </div>
+      <header class="sticky top-0 z-20 border-b border-base-300/60 bg-base-100/80 backdrop-blur">
+        <div class="navbar max-w-5xl mx-auto px-6">
+          <div class="navbar-start">
+            <a class="text-xl font-display font-semibold" href="/">YourName</a>
           </div>
-          <div class="flex-none">
-            <a class="btn btn-outline btn-sm" href="/">Back home</a>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal gap-2">
+              <li><a href="/">ホーム</a></li>
+              <li><a href="#profile">紹介</a></li>
+              <li><a href="#process">制作</a></li>
+              <li><a href="#contact">連絡</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end lg:hidden">
+            <div class="dropdown dropdown-end">
+              <label tabindex="0" class="btn btn-ghost">Menu</label>
+              <ul tabindex="0" class="menu dropdown-content mt-3 w-44 rounded-box bg-base-100 p-2 shadow">
+                <li><a href="/">ホーム</a></li>
+                <li><a href="#profile">紹介</a></li>
+                <li><a href="#process">制作</a></li>
+                <li><a href="#contact">連絡</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
 
-      <main class="max-w-5xl mx-auto px-6 py-12 space-y-10">
-        <section class="card bg-base-100/90 shadow-xl backdrop-blur">
-          <div class="card-body">
-            <p class="uppercase tracking-[0.2em] text-xs text-neutral/60">About</p>
-            <h1 class="text-4xl font-display">Design-minded Go engineer</h1>
-            <p class="text-neutral/70">
-              I help teams turn complex product ideas into simple, reliable experiences. My work blends
-              strategy, systems design, and thoughtful UI that supports real people.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span class="badge badge-outline">Tokyo</span>
-              <span class="badge badge-outline">Freelance</span>
-              <span class="badge badge-outline">Product strategy</span>
+      <main class="relative z-10 max-w-5xl mx-auto px-6 py-10 space-y-16">
+        <section id="profile" class="space-y-6">
+          <div class="card border border-base-300/60 bg-base-100 shadow-sm">
+            <div class="card-body gap-4 md:flex-row md:items-center md:justify-between">
+              <div class="space-y-2">
+                <p class="text-xs uppercase tracking-[0.3em] text-base-content/50">Profile</p>
+                <h1 class="text-4xl">YourName</h1>
+                <p class="text-base-content/70">絵とデザインのあいだ</p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="badge badge-outline">Drawing</span>
+                <span class="badge badge-outline">Digital</span>
+                <span class="badge">Exhibition</span>
+              </div>
+            </div>
+          </div>
+          <p class="text-base-content/70 leading-relaxed">
+            静かな配色と、余白のある構成を意識して制作しています。展示や依頼制作の記録をシンプルにまとめています。
+          </p>
+        </section>
+
+        <section id="process" class="space-y-6">
+          <div>
+            <h2 class="text-2xl">制作について</h2>
+            <p class="mt-2 text-base-content/70">小さな気配を拾い、形にしていく時間が好きです。</p>
+          </div>
+          <div class="grid gap-4 md:grid-cols-2">
+            <div class="rounded-2xl border border-base-300/60 bg-base-100 p-5 text-base-content/70">
+              作品は、アナログのドローイングとデジタルの編集を行き来しながら仕上げています。
+              色数は抑えつつ、紙の質感や線の強弱が残るように調整しています。
+            </div>
+            <div class="rounded-2xl border border-base-300/60 bg-base-100 p-5">
+              <p class="text-sm uppercase tracking-[0.2em] text-base-content/50">Focus</p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="badge badge-outline">Drawing</span>
+                <span class="badge badge-outline">Digital</span>
+                <span class="badge badge-outline">Exhibition</span>
+                <span class="badge">Book</span>
+              </div>
+              <p class="mt-4 text-base-content/70">素材や線の温度感を大切にしています。</p>
             </div>
           </div>
         </section>
 
-        <section class="grid gap-6 md:grid-cols-2">
-          <div class="card bg-base-100 shadow">
-            <div class="card-body">
-              <h2 class="card-title">What I value</h2>
-              <ul class="space-y-2 text-neutral/70 list-disc list-inside">
-                <li>Clear outcomes over busywork.</li>
-                <li>Fast feedback loops with real users.</li>
-                <li>Systems that stay easy to maintain.</li>
-              </ul>
-            </div>
+        <section class="space-y-6">
+          <div>
+            <h2 class="text-2xl">これまで</h2>
+            <p class="mt-2 text-base-content/70">活動の記録や参加したプロジェクトの概要。</p>
           </div>
-          <div class="card bg-base-100 shadow">
-            <div class="card-body">
-              <h2 class="card-title">How I collaborate</h2>
-              <p class="text-neutral/70">
-                I map the core flows, prototype rapidly, and ship with clarity. Expect calm communication,
-                clean Go services, and interfaces that feel welcoming.
-              </p>
-            </div>
-          </div>
+          <ul class="timeline timeline-vertical">
+            <li>
+              <div class="timeline-start text-sm text-base-content/60">2024</div>
+              <div class="timeline-middle">
+                <span class="badge badge-primary badge-xs"></span>
+              </div>
+              <div class="timeline-end">個展「静かな境界」を開催。</div>
+            </li>
+            <li>
+              <div class="timeline-start text-sm text-base-content/60">2023</div>
+              <div class="timeline-middle">
+                <span class="badge badge-primary badge-xs"></span>
+              </div>
+              <div class="timeline-end">書籍装丁の挿絵を担当。</div>
+            </li>
+            <li>
+              <div class="timeline-start text-sm text-base-content/60">2022</div>
+              <div class="timeline-middle">
+                <span class="badge badge-primary badge-xs"></span>
+              </div>
+              <div class="timeline-end">展示企画に参加、作品集を制作。</div>
+            </li>
+          </ul>
         </section>
 
-        <section class="card bg-base-100 shadow">
-          <div class="card-body">
-            <h2 class="card-title">Milestones</h2>
-            <ul class="timeline timeline-vertical">
-              <li>
-                <div class="timeline-start text-xs uppercase tracking-[0.2em]">2024</div>
-                <div class="timeline-middle">●</div>
-                <div class="timeline-end">Led a fintech onboarding redesign with a 3x completion lift.</div>
-              </li>
-              <li>
-                <div class="timeline-start text-xs uppercase tracking-[0.2em]">2022</div>
-                <div class="timeline-middle">●</div>
-                <div class="timeline-end">Built a Go platform powering 40+ internal services.</div>
-              </li>
-              <li>
-                <div class="timeline-start text-xs uppercase tracking-[0.2em]">2020</div>
-                <div class="timeline-middle">●</div>
-                <div class="timeline-end">Shipped a commerce stack with a 28% conversion lift.</div>
-              </li>
-            </ul>
+        <section id="contact" class="space-y-6">
+          <div>
+            <h2 class="text-2xl">連絡</h2>
+            <p class="mt-2 text-base-content/70">制作依頼や展示のお誘いはこちらへ。</p>
           </div>
-        </section>
-
-        <section class="card bg-base-100 shadow">
-          <div class="card-body">
-            <h2 class="card-title">Let&apos;s connect</h2>
-            <p class="text-neutral/70">
-              Interested in a collaboration or just want to say hello? I reply within two days.
-            </p>
-            <div class="card-actions">
-              <a class="btn btn-primary" href="mailto:hello@example.com">hello@example.com</a>
-              <a class="btn btn-outline" href="https://github.com/">GitHub</a>
+          <div class="card border border-base-300/60 bg-base-100 shadow-sm">
+            <div class="card-body flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div class="space-y-1">
+                <p class="text-sm uppercase tracking-[0.2em] text-base-content/50">Contact</p>
+                <p class="text-lg font-semibold">hello@example.com</p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <a class="btn btn-primary" href="mailto:hello@example.com">メールする</a>
+                <a class="btn btn-ghost" href="https://www.instagram.com/">Instagram</a>
+              </div>
             </div>
           </div>
         </section>
       </main>
 
-      <footer class="max-w-5xl mx-auto px-6 pb-8 text-sm text-neutral/60">
-        <span>© 2024 YourName. Built with Go + DaisyUI.</span>
+      <footer class="relative z-10 border-t border-base-300/60">
+        <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col gap-2 md:flex-row md:items-center md:justify-between text-sm text-base-content/60">
+          <span>© 2024 YourName</span>
+          <a class="link link-hover" href="/">ホームへ戻る</a>
+        </div>
       </footer>
     </div>
   </body>

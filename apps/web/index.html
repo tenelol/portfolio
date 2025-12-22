@@ -3,264 +3,355 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio — YourName</title>
+    <title>Portfolio — Tener</title>
+    <link rel="icon" href="/static/neko.png" type="image/png" />
     <link rel="stylesheet" href="/static/app.css" />
   </head>
-  <body data-theme="autumn" class="min-h-screen text-base-content">
-    <div class="page-bg">
-      <header class="max-w-6xl mx-auto px-6 pt-6">
-        <div class="navbar glass rounded-2xl shadow-lg shadow-base-300/40">
-          <div class="flex-1 items-center gap-3">
-            <a class="btn btn-ghost text-xl font-display" href="/">YourName</a>
-            <span class="hidden md:inline text-xs uppercase tracking-[0.2em] text-neutral/60">
-              Product-focused Go engineer
-            </span>
+  <body class="bg-grid">
+    <div class="min-h-screen relative">
+      <div class="pointer-events-none absolute inset-0 z-0 opacity-70">
+        <div class="sticker sticker-pop sticker-float absolute left-4 top-20 h-20 w-20 rotate-[-6deg] md:left-6 md:h-28 md:w-28">
+          <img class="h-full w-full rounded-full object-cover" src="/static/neko.png" alt="キャラクター 1" />
+        </div>
+        <div class="sticker sticker-pop sticker-wiggle absolute right-4 top-40 h-16 w-16 rotate-[8deg] md:right-8 md:h-20 md:w-20">
+          <img class="h-full w-full rounded-full object-cover" src="/static/usagi.png" alt="キャラクター 2" />
+        </div>
+        <div class="sticker sticker-pop absolute left-10 bottom-32 hidden h-24 w-24 rotate-[10deg] lg:block">
+          <img class="h-full w-full rounded-full object-cover" src="/static/pengin.png" alt="キャラクター 3" />
+        </div>
+        <div class="sticker sticker-pop absolute right-16 bottom-20 hidden h-28 w-28 rotate-[-8deg] lg:block">
+          <img class="h-full w-full rounded-full object-cover" src="/static/aoneko.jpg" alt="キャラクター 4" />
+        </div>
+      </div>
+      <header class="sticky top-0 z-20 border-b border-base-300/60 bg-base-100/80 backdrop-blur">
+        <div class="navbar max-w-6xl mx-auto px-6">
+          <div class="navbar-start">
+            <a class="text-xl font-display font-semibold" href="/">Tenelol</a>
           </div>
-          <div class="flex-none hidden md:flex">
-            <ul class="menu menu-horizontal px-1 text-sm">
-              <li><a href="#work">Work</a></li>
-              <li><a href="#process">Process</a></li>
-              <li><a href="#stack">Stack</a></li>
-              <li><a href="/about">About</a></li>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal gap-2">
+              <li><a href="#works">作品</a></li>
+              <li><a href="#profile">プロフィール</a></li>
+              <li><a href="#services">できること</a></li>
+              <li><a href="#contact">連絡</a></li>
             </ul>
           </div>
-          <div class="flex-none">
-            <a class="btn btn-primary btn-sm" href="#contact">Let&apos;s talk</a>
+          <div class="navbar-end lg:hidden">
+            <div class="dropdown dropdown-end">
+              <label tabindex="0" class="btn btn-ghost">Menu</label>
+              <ul tabindex="0" class="menu dropdown-content mt-3 w-48 rounded-box bg-base-100 p-2 shadow">
+                <li><a href="#works">作品</a></li>
+                <li><a href="#profile">プロフィール</a></li>
+                <li><a href="#services">できること</a></li>
+                <li><a href="#contact">連絡</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
 
-      <main class="max-w-6xl mx-auto px-6 pb-20">
-        <section class="pt-14 pb-12">
-          <div class="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] items-center">
-            <div class="space-y-6">
-              <div class="badge badge-outline badge-accent uppercase tracking-[0.3em]">Portfolio</div>
-              <h1 class="text-4xl md:text-6xl font-display leading-tight">
-                I craft calm, resilient web experiences with Go and design rigor.
-              </h1>
-              <p class="text-lg text-neutral/70 max-w-xl">
-                I help teams shape product ideas into fast, reliable interfaces.
-                Strategy, Go architecture, and expressive UI in one loop.
-              </p>
-              <div class="flex flex-wrap gap-3">
-                <a class="btn btn-primary" href="#work">View work</a>
-                <a class="btn btn-outline" href="/about">Read my story</a>
-              </div>
-              <div class="stats stats-vertical sm:stats-horizontal bg-base-100 shadow">
-                <div class="stat">
-                  <div class="stat-title">Years building</div>
-                  <div class="stat-value text-primary">7+</div>
-                </div>
-                <div class="stat">
-                  <div class="stat-title">Shipped products</div>
-                  <div class="stat-value">20+</div>
-                </div>
-                <div class="stat">
-                  <div class="stat-title">Primary focus</div>
-                  <div class="stat-value text-accent">Go</div>
-                </div>
-              </div>
-            </div>
-            <div class="relative">
-              <div class="hero-orb"></div>
-              <div class="card bg-base-100/90 shadow-xl backdrop-blur">
-                <div class="card-body">
-                  <p class="text-xs uppercase tracking-[0.25em] text-neutral/60">Now</p>
-                  <h2 class="card-title font-display text-2xl">Currently crafting</h2>
-                  <p class="text-neutral/70">
-                    A workflow platform for creative studios with automation, calm UI, and warm data stories.
-                  </p>
-                  <div class="divider"></div>
-                  <div class="grid gap-3 text-sm">
-                    <div class="flex items-center justify-between">
-                      <span class="uppercase tracking-[0.2em] text-neutral/60 text-xs">Availability</span>
-                      <span class="font-semibold">Open in Q1</span>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                      <span class="badge badge-outline">Remote</span>
-                      <span class="badge badge-outline">Product strategy</span>
-                      <span class="badge badge-outline">Go services</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="work" class="py-12">
-          <div class="flex items-end justify-between gap-4 flex-wrap">
-            <div>
-              <h2 class="text-3xl font-display">Selected work</h2>
-              <p class="text-neutral/70">A snapshot of product, systems, and interface work.</p>
-            </div>
-            <a class="btn btn-sm btn-outline" href="/about">View timeline</a>
-          </div>
-          <div class="mt-6 grid gap-6 lg:grid-cols-3">
-            <article class="card bg-base-100 shadow-lg">
-              <div class="card-body">
-                <div class="flex items-center justify-between">
-                  <h3 class="card-title">Atlas Ops</h3>
-                  <span class="badge badge-primary">Go</span>
-                </div>
-                <p class="text-neutral/70">
-                  Observability suite with realtime traces and a human-readable incident timeline.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                  <span class="badge badge-outline">Realtime</span>
-                  <span class="badge badge-outline">Multi-tenant</span>
-                  <span class="badge badge-outline">HTMX</span>
-                </div>
-                <div class="card-actions justify-end">
-                  <button class="btn btn-ghost btn-sm">Case study</button>
-                </div>
-              </div>
-            </article>
-            <article class="card bg-base-100 shadow-lg">
-              <div class="card-body">
-                <div class="flex items-center justify-between">
-                  <h3 class="card-title">Dune Commerce</h3>
-                  <span class="badge badge-secondary">UX</span>
-                </div>
-                <p class="text-neutral/70">
-                  Checkout redesign and service refactor that lifted conversion by 28%.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                  <span class="badge badge-outline">Design system</span>
-                  <span class="badge badge-outline">Go APIs</span>
-                  <span class="badge badge-outline">A/B testing</span>
-                </div>
-                <div class="card-actions justify-end">
-                  <button class="btn btn-ghost btn-sm">Impact</button>
-                </div>
-              </div>
-            </article>
-            <article class="card bg-base-100 shadow-lg">
-              <div class="card-body">
-                <div class="flex items-center justify-between">
-                  <h3 class="card-title">Lumen Studio</h3>
-                  <span class="badge badge-accent">Design</span>
-                </div>
-                <p class="text-neutral/70">
-                  Editorial portfolio for a design collective with a calm, gallery-like flow.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                  <span class="badge badge-outline">Brand system</span>
-                  <span class="badge badge-outline">Storytelling</span>
-                  <span class="badge badge-outline">Motion</span>
-                </div>
-                <div class="card-actions justify-end">
-                  <button class="btn btn-ghost btn-sm">View site</button>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section id="process" class="py-12">
-          <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-            <div>
-              <h2 class="text-3xl font-display">How I work</h2>
-              <p class="text-neutral/70">
-                A tight loop that keeps product goals, systems, and UI aligned from day one.
+      <main class="relative z-10 max-w-6xl mx-auto px-6 py-10 space-y-16">
+        <section id="profile" class="hero rounded-3xl bg-base-200/70">
+          <div class="hero-content flex-col lg:flex-row gap-10">
+            <div class="max-w-2xl">
+              <p class="text-xs tracking-[0.3em] uppercase text-base-content/60">Portfolio</p>
+              <h1 class="mt-4 text-4xl md:text-5xl">Tener</h1>
+              <p class="mt-3 text-lg font-semibold text-base-content/80">Linux lover/ university students</p>
+              <p class="mt-4 leading-relaxed text-base-content/70">
+                ここに自己紹介の短文。どんな制作をしているか、どんな価値を届けたいかを書きます。
+                後から書き換えやすいように、2〜3行でまとめるのがおすすめです。
               </p>
               <div class="mt-6 flex flex-wrap gap-2">
-                <span class="badge badge-outline">Discovery</span>
-                <span class="badge badge-outline">System design</span>
-                <span class="badge badge-outline">Prototyping</span>
-                <span class="badge badge-outline">Delivery</span>
+                <span class="badge badge-outline">Illustration</span>
+                <span class="badge badge-outline">Engineer</span>
+                <span class="badge">Tokyo / Remote</span>
               </div>
             </div>
-            <div class="grid gap-4">
-              <div class="card bg-base-100 shadow">
+            <div class="w-full max-w-sm">
+              <div class="card bg-base-100 shadow-xl">
+                <figure class="px-6 pt-6">
+                  <img class="rounded-2xl" src="/static/tener.jpg" alt="代表作のイメージ" />
+                </figure>
                 <div class="card-body">
-                  <h3 class="card-title">1. Map the experience</h3>
-                  <p class="text-neutral/70">
-                    Define the core journeys, metrics, and guardrails that keep the team aligned.
-                  </p>
-                </div>
-              </div>
-              <div class="card bg-base-100 shadow">
-                <div class="card-body">
-                  <h3 class="card-title">2. Build the system</h3>
-                  <p class="text-neutral/70">
-                    Design Go services and UI components together so scale feels natural.
-                  </p>
-                </div>
-              </div>
-              <div class="card bg-base-100 shadow">
-                <div class="card-body">
-                  <h3 class="card-title">3. Deliver &amp; iterate</h3>
-                  <p class="text-neutral/70">
-                    Ship in measured slices with feedback loops and living documentation.
-                  </p>
+                  <h2 class="card-title">こにちは</h2>
+                  <p class="text-sm text-base-content/70">イラスト？描きますよ^^</p>
+                  <div class="card-actions justify-start">
+                    <a class="btn btn-primary btn-sm" href="#contact">依頼する</a>
+                    <a class="btn btn-ghost btn-sm" href="#works">作品を見る</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="stack" class="py-12">
-          <div class="grid gap-8 lg:grid-cols-[1fr_1fr]">
-            <div>
-              <h2 class="text-3xl font-display">Stack & strengths</h2>
-              <p class="text-neutral/70">Focused toolkit for reliable product delivery.</p>
-              <div class="mt-4 flex flex-wrap gap-2">
-                <span class="badge badge-outline">Go</span>
-                <span class="badge badge-outline">Nixar</span>
-                <span class="badge badge-outline">Postgres</span>
-                <span class="badge badge-outline">HTMX</span>
-                <span class="badge badge-outline">DaisyUI</span>
-                <span class="badge badge-outline">Tailwind</span>
-                <span class="badge badge-outline">Figma</span>
-              </div>
-            </div>
-            <div class="card bg-base-100 shadow">
+        <section id="works" class="space-y-6">
+          <div>
+            <h2 class="text-2xl">作品・プロジェクト</h2>
+            <p class="mt-2 text-base-content/70">最近の制作や、僕の輝かしい実績。</p>
+          </div>
+          <div class="grid gap-6 md:grid-cols-2">
+            <article class="card border border-base-300/60 bg-base-100 shadow-md">
+              <figure class="px-6 pt-6">
+                <a href="https://qiita.com/tener/items/940198e079b20385cfab" aria-label="Qiita記事を開く">
+                  <img
+                    class="rounded-2xl"
+                    src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.0.0%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnFpaXRhLWltYWdlLXN0b3JlLnMzLmFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkYwJTJGNDIzOTk2NSUyRnByb2ZpbGUtaW1hZ2VzJTJGMTc2MzkxNzEyOD9peGxpYj1yYi00LjAuMCZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9NDBkNGU0ZGE2ZWJmNGM1Y2QxNzhjNWU4ZTA4OWFkZDM%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3D532be33d9ee9f8c8bf3ac4df4cef091b?ixlib=rb-4.0.0&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjAuMCZ3PTk2MCZoPTMyNCZ0eHQ9Tml4T1MlRTMlODElQUUlRTMlODMlOEUlRTMlODMlQkMlRTMlODMlODhQQyVFMyU4MiU5MkNsb3VkZmxhcmUlMjBUdW5uZWwlRTclQjUlOEMlRTclOTQlQjElRTMlODElQTclRTMlODIlQjUlRTMlODMlQkMlRTMlODMlOTAlRTMlODMlQkMlRTUlOEMlOTYlRTMlODElOTclRTMlODElOUYlRTglQTklQjEmdHh0LWFsaWduPWxlZnQlMkN0b3AmdHh0LWNvbG9yPSUyMzFFMjEyMSZ0eHQtZm9udD1IaXJhZ2lubyUyMFNhbnMlMjBXNiZ0eHQtc2l6ZT01NiZ0eHQtcGFkPTAmcz00MDM4MWJiYzE0MzQ2NWI3NmI1MjViZTZhNTNjMTI1Yw&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjAuMCZ3PTgzOCZoPTU4JnR4dD0lNDB0ZW5lciZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWRmNmJkODE0NDBmZTdjMWM3OWE2NDUyMDIwZmZiY2I0&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=dfeba5605f1a1112254a5e000af960e6"
+                    alt="Qiita記事のOGP"
+                  />
+                </a>
+              </figure>
               <div class="card-body">
-                <h3 class="card-title">What you can expect</h3>
-                <p class="text-neutral/70">
-                  Calm leadership, documentation that keeps teams aligned, and interfaces that feel inviting.
-                </p>
-                <div class="mt-4 grid gap-3 text-sm">
-                  <div class="flex items-center justify-between">
-                    <span class="uppercase tracking-[0.2em] text-neutral/60 text-xs">Response</span>
-                    <span class="font-semibold">Within 24 hours</span>
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <span class="uppercase tracking-[0.2em] text-neutral/60 text-xs">Timezone</span>
-                    <span class="font-semibold">Tokyo / Remote</span>
-                  </div>
+                <p class="text-xs uppercase tracking-[0.25em] text-base-content/50">2025 · Editorial</p>
+                <h3 class="card-title">Qiita記事タイトル</h3>
+                <p class="text-base-content/70">Qiitaの記事を紹介。タイトルや要約は自由に変更できます。</p>
+                <div class="card-actions">
+                  <a class="link link-hover" href="https://qiita.com/tener/items/940198e079b20385cfab">記事を見る →</a>
                 </div>
+              </div>
+            </article>
+            <article class="card border border-base-300/60 bg-base-100 shadow-md">
+              <div class="card-body">
+                <p class="text-xs uppercase tracking-[0.25em] text-base-content/50">2024 · Branding</p>
+                <h3 class="card-title">プロジェクト名</h3>
+                <p class="text-base-content/70">クライアント名や成果の一言。あとから差し替え。</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="badge badge-primary badge-outline">3 Weeks</span>
+                  <span class="badge badge-outline">Team</span>
+                </div>
+              </div>
+            </article>
+            <article class="card border border-base-300/60 bg-base-100 shadow-md md:col-span-2">
+              <div class="card-body flex flex-col gap-3 md:flex-row md:items-center">
+                <div class="flex-1 space-y-2">
+                  <p class="text-xs uppercase tracking-[0.25em] text-base-content/50">2023 · Illustration</p>
+                  <h3 class="card-title">展示 / 参加プロジェクト</h3>
+                  <p class="text-base-content/70">展示名・媒体名など。必要に応じてリンクを追加。</p>
+                </div>
+                <div class="flex gap-2">
+                  <span class="badge badge-outline">Featured</span>
+                  <span class="badge">Print</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <p class="text-sm text-base-content/60">ここに制作ログや公開していない作品の補足を書いてもOK。</p>
+        </section>
+
+        <section class="space-y-6">
+          <div>
+            <h2 class="text-2xl">制作の流れ</h2>
+            <p class="mt-2 text-base-content/70">相談から納品までの流れを簡潔に。</p>
+          </div>
+          <ul class="steps steps-vertical lg:steps-horizontal w-full">
+            <li class="step step-primary">
+              <span class="font-semibold">1. ヒアリング</span>
+            </li>
+            <li class="step step-primary">
+              <span class="font-semibold">2. ラフ提案</span>
+            </li>
+            <li class="step step-primary">
+              <span class="font-semibold">3. 仕上げ</span>
+            </li>
+          </ul>
+          <div class="grid gap-4 md:grid-cols-3">
+            <div class="rounded-2xl border border-base-300/60 bg-base-100 p-4 text-sm text-base-content/70">
+              目的やイメージ、期限を共有。
+            </div>
+            <div class="rounded-2xl border border-base-300/60 bg-base-100 p-4 text-sm text-base-content/70">
+              方向性を複数案で提示。
+            </div>
+            <div class="rounded-2xl border border-base-300/60 bg-base-100 p-4 text-sm text-base-content/70">
+              最終調整と納品。
+            </div>
+          </div>
+        </section>
+
+        <section id="services" class="space-y-6">
+          <div>
+            <h2 class="text-2xl">できること</h2>
+            <p class="mt-2 text-base-content/70">提供メニュー例。必要に合わせて増減してください。</p>
+          </div>
+          <div class="grid gap-6 md:grid-cols-3">
+            <div class="card border border-base-300/60 bg-base-100 shadow-sm">
+              <div class="card-body">
+                <div class="flex items-center justify-between">
+                  <h3 class="card-title text-lg">アートディレクション</h3>
+                  <span class="badge badge-outline">Plan</span>
+                </div>
+                <p class="text-base-content/70">世界観の設計、ビジュアルの方向性を整理。</p>
+              </div>
+            </div>
+            <div class="card border border-base-300/60 bg-base-100 shadow-sm">
+              <div class="card-body">
+                <div class="flex items-center justify-between">
+                  <h3 class="card-title text-lg">グラフィック制作</h3>
+                  <span class="badge badge-outline">Design</span>
+                </div>
+                <p class="text-base-content/70">ポスター、装丁、パッケージなど。</p>
+              </div>
+            </div>
+            <div class="card border border-base-300/60 bg-base-100 shadow-sm">
+              <div class="card-body">
+                <div class="flex items-center justify-between">
+                  <h3 class="card-title text-lg">イラスト制作</h3>
+                  <span class="badge badge-outline">Illustration</span>
+                </div>
+                <p class="text-base-content/70">広告、書籍、Web媒体向けの挿絵。</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="contact" class="py-14">
-          <div class="card bg-base-100 shadow-xl">
-            <div class="card-body items-start gap-6 lg:flex-row lg:items-center lg:justify-between">
-              <div>
-                <h2 class="text-3xl font-display">Let&apos;s build something calm and resilient</h2>
-                <p class="text-neutral/70">
-                  Share your product vision, timeline, and constraints. I&apos;ll reply within two days.
-                </p>
+        <section class="space-y-6">
+          <div>
+            <h2 class="text-2xl">ギャラリー</h2>
+            <p class="mt-2 text-base-content/70">見せたい雰囲気を3〜6枚で構成。</p>
+          </div>
+          <div class="relative">
+            <div
+              id="gallery-scroll"
+              class="hide-scrollbar fade-edges flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory scroll-smooth"
+            >
+            <div class="snap-start shrink-0 w-72 sm:w-80 overflow-hidden rounded-2xl border border-base-300/60 bg-base-100">
+              <img src="/static/hero.webp" alt="作品写真 1" />
+            </div>
+            <div class="snap-start shrink-0 w-72 sm:w-80 overflow-hidden rounded-2xl border border-base-300/60 bg-base-100">
+              <img src="/static/hero.webp" alt="作品写真 2" />
+            </div>
+            <div class="snap-start shrink-0 w-72 sm:w-80 overflow-hidden rounded-2xl border border-base-300/60 bg-base-100">
+              <img src="/static/hero.webp" alt="作品写真 3" />
+            </div>
+            </div>
+            <div class="absolute left-3 top-1/2 z-10 flex -translate-y-1/2 items-center">
+              <button
+                type="button"
+                class="btn btn-circle btn-ghost btn-sm opacity-70 hover:opacity-100 md:btn-md"
+                aria-label="前の画像へ"
+                data-scroll="gallery-prev"
+              >
+                ←
+              </button>
+            </div>
+            <div class="absolute right-3 top-1/2 z-10 flex -translate-y-1/2 items-center">
+              <button
+                type="button"
+                class="btn btn-circle btn-ghost btn-sm opacity-70 hover:opacity-100 md:btn-md"
+                aria-label="次の画像へ"
+                data-scroll="gallery-next"
+              >
+                →
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="space-y-6">
+          <div>
+            <h2 class="text-2xl">これまで</h2>
+            <p class="mt-2 text-base-content/70">年表形式の実績。必要に応じて行を追加。</p>
+          </div>
+          <ul class="timeline timeline-vertical">
+            <li>
+              <div class="timeline-start text-sm text-base-content/60">2025</div>
+              <div class="timeline-middle">
+                <span class="badge badge-primary badge-xs"></span>
               </div>
-              <div class="flex flex-wrap gap-3">
-                <a class="btn btn-primary" href="mailto:hello@example.com">hello@example.com</a>
-                <a class="btn btn-outline" href="https://github.com/">GitHub</a>
-                <a class="btn btn-outline" href="https://www.linkedin.com/">LinkedIn</a>
+              <div class="timeline-end">個展「タイトル」を開催。</div>
+            </li>
+            <li>
+              <div class="timeline-start text-sm text-base-content/60">2024</div>
+              <div class="timeline-middle">
+                <span class="badge badge-primary badge-xs"></span>
+              </div>
+              <div class="timeline-end">ブランドビジュアルを担当。</div>
+            </li>
+            <li>
+              <div class="timeline-start text-sm text-base-content/60">2023</div>
+              <div class="timeline-middle">
+                <span class="badge badge-primary badge-xs"></span>
+              </div>
+              <div class="timeline-end">書籍装丁の挿絵を制作。</div>
+            </li>
+          </ul>
+        </section>
+
+        <section id="contact" class="space-y-6">
+          <div>
+            <h2 class="text-2xl">連絡</h2>
+            <p class="mt-2 text-base-content/70">メールやSNSなど、連絡先をまとめて記載。</p>
+          </div>
+          <div class="card border border-base-300/60 bg-base-100 shadow-sm">
+            <div class="card-body flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div class="space-y-1">
+                <p class="text-sm uppercase tracking-[0.2em] text-base-content/50">Contact</p>
+                <p class="text-lg font-semibold">tenelol@tenelol.dev</p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <a class="btn btn-primary" href="mailto:tenelol@tenelol.dev">メールする</a>
+                <a class="btn btn-ghost" href="https://www.instagram.com/tener319">Instagram</a>
+                <a class="btn btn-ghost" href="https://x.com/tenelol/">X</a>
               </div>
             </div>
           </div>
         </section>
       </main>
 
-      <footer class="max-w-6xl mx-auto px-6 pb-10 text-sm text-neutral/60">
-        <div class="flex flex-wrap items-center justify-between gap-4">
-          <span>© 2024 YourName. Crafted with Go + DaisyUI.</span>
-          <a class="link link-hover" href="/about">More about me</a>
+      <footer class="relative z-10 border-t border-base-300/60">
+        <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col gap-2 md:flex-row md:items-center md:justify-between text-sm text-base-content/60">
+          <span>© 2025 Tenelol</span>
+          <a class="link link-hover" href="#profile">Topへ戻る</a>
         </div>
       </footer>
     </div>
+    <script>
+      (function () {
+        var nextBtn = document.querySelector("[data-scroll='gallery-next']");
+        var prevBtn = document.querySelector("[data-scroll='gallery-prev']");
+        var scroller = document.getElementById("gallery-scroll");
+        if (!scroller) return;
+
+        var amount = function () {
+          return scroller.clientWidth * 0.8;
+        };
+
+        var scrollNext = function () {
+          var max = scroller.scrollWidth - scroller.clientWidth;
+          if (scroller.scrollLeft + amount() >= max - 4) {
+            scroller.scrollTo({ left: 0, behavior: "smooth" });
+          } else {
+            scroller.scrollBy({ left: amount(), behavior: "smooth" });
+          }
+        };
+
+        var scrollPrev = function () {
+          if (scroller.scrollLeft <= 4) {
+            scroller.scrollTo({ left: scroller.scrollWidth, behavior: "smooth" });
+          } else {
+            scroller.scrollBy({ left: -amount(), behavior: "smooth" });
+          }
+        };
+
+        if (nextBtn) {
+          nextBtn.addEventListener("click", function () {
+            scrollPrev();
+            resetAuto();
+          });
+        }
+        if (prevBtn) {
+          prevBtn.addEventListener("click", function () {
+            scrollNext();
+            resetAuto();
+          });
+        }
+
+        var timerId = null;
+        var resetAuto = function () {
+          if (timerId) window.clearInterval(timerId);
+          timerId = window.setInterval(scrollNext, 4200);
+        };
+        resetAuto();
+      })();
+    </script>
   </body>
 </html>
