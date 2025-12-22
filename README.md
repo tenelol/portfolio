@@ -39,6 +39,17 @@ npm run watch:css
 pnpm run watch:css
 ```
 
+## Live reload (air)
+From the dev shell (`nix develop`):
+```bash
+air
+```
+
+Recommended during development:
+```bash
+pnpm run watch:css
+```
+
 ## Routes
 - `/` Home page
 - `/about` About page

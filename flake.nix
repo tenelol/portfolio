@@ -31,6 +31,7 @@
           pkgs.gopls
           pkgs.nodejs_20
           pkgs.pnpm
+          pkgs.air
         ];
       };
     };
