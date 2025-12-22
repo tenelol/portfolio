@@ -1,26 +1,106 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About — nixar template</title>
-    <link rel="stylesheet" href="/static/style.css" />
+    <title>About — YourName</title>
+    <link rel="stylesheet" href="/static/app.css" />
   </head>
-  <body>
-    <main class="page">
-      <header class="hero">
-        <p class="label">About</p>
-        <h1>Keep it minimal</h1>
-        <p class="lead">Edit the HTML or wire up your own handlers.</p>
+  <body data-theme="autumn" class="min-h-screen text-base-content">
+    <div class="page-bg">
+      <header class="max-w-5xl mx-auto px-6 pt-6">
+        <div class="navbar glass rounded-2xl shadow-lg shadow-base-300/40">
+          <div class="flex-1 items-center gap-3">
+            <a class="btn btn-ghost text-xl font-display" href="/">YourName</a>
+            <span class="hidden md:inline text-xs uppercase tracking-[0.2em] text-neutral/60">
+              About
+            </span>
+          </div>
+          <div class="flex-none">
+            <a class="btn btn-outline btn-sm" href="/">Back home</a>
+          </div>
+        </div>
       </header>
 
-      <section class="card">
-        <p>
-          This template mirrors the core nixar example with a tiny layout and
-          a single JSON endpoint for testing.
-        </p>
-        <a class="button" href="/">Back to home</a>
-      </section>
-    </main>
+      <main class="max-w-5xl mx-auto px-6 py-12 space-y-10">
+        <section class="card bg-base-100/90 shadow-xl backdrop-blur">
+          <div class="card-body">
+            <p class="uppercase tracking-[0.2em] text-xs text-neutral/60">About</p>
+            <h1 class="text-4xl font-display">Design-minded Go engineer</h1>
+            <p class="text-neutral/70">
+              I help teams turn complex product ideas into simple, reliable experiences. My work blends
+              strategy, systems design, and thoughtful UI that supports real people.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="badge badge-outline">Tokyo</span>
+              <span class="badge badge-outline">Freelance</span>
+              <span class="badge badge-outline">Product strategy</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid gap-6 md:grid-cols-2">
+          <div class="card bg-base-100 shadow">
+            <div class="card-body">
+              <h2 class="card-title">What I value</h2>
+              <ul class="space-y-2 text-neutral/70 list-disc list-inside">
+                <li>Clear outcomes over busywork.</li>
+                <li>Fast feedback loops with real users.</li>
+                <li>Systems that stay easy to maintain.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow">
+            <div class="card-body">
+              <h2 class="card-title">How I collaborate</h2>
+              <p class="text-neutral/70">
+                I map the core flows, prototype rapidly, and ship with clarity. Expect calm communication,
+                clean Go services, and interfaces that feel welcoming.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card bg-base-100 shadow">
+          <div class="card-body">
+            <h2 class="card-title">Milestones</h2>
+            <ul class="timeline timeline-vertical">
+              <li>
+                <div class="timeline-start text-xs uppercase tracking-[0.2em]">2024</div>
+                <div class="timeline-middle">●</div>
+                <div class="timeline-end">Led a fintech onboarding redesign with a 3x completion lift.</div>
+              </li>
+              <li>
+                <div class="timeline-start text-xs uppercase tracking-[0.2em]">2022</div>
+                <div class="timeline-middle">●</div>
+                <div class="timeline-end">Built a Go platform powering 40+ internal services.</div>
+              </li>
+              <li>
+                <div class="timeline-start text-xs uppercase tracking-[0.2em]">2020</div>
+                <div class="timeline-middle">●</div>
+                <div class="timeline-end">Shipped a commerce stack with a 28% conversion lift.</div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="card bg-base-100 shadow">
+          <div class="card-body">
+            <h2 class="card-title">Let&apos;s connect</h2>
+            <p class="text-neutral/70">
+              Interested in a collaboration or just want to say hello? I reply within two days.
+            </p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="mailto:hello@example.com">hello@example.com</a>
+              <a class="btn btn-outline" href="https://github.com/">GitHub</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="max-w-5xl mx-auto px-6 pb-8 text-sm text-neutral/60">
+        <span>© 2024 YourName. Built with Go + DaisyUI.</span>
+      </footer>
+    </div>
   </body>
 </html>

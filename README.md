@@ -17,6 +17,28 @@ nix develop
 nix build
 ```
 
+## Styling (Tailwind + DaisyUI)
+Install dependencies with npm or pnpm:
+```bash
+npm install
+# or
+pnpm install
+```
+
+Build the CSS (outputs to `static/app.css`):
+```bash
+npm run build:css
+# or
+pnpm run build:css
+```
+
+Watch while editing HTML/CSS:
+```bash
+npm run watch:css
+# or
+pnpm run watch:css
+```
+
 ## Routes
 - `/` Home page
 - `/about` About page

@@ -1,32 +1,266 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>nixar template</title>
-    <link rel="stylesheet" href="/static/style.css" />
+    <title>Portfolio — YourName</title>
+    <link rel="stylesheet" href="/static/app.css" />
   </head>
-  <body>
-    <main class="page">
-      <header class="hero">
-        <p class="label">Starter template</p>
-        <h1>nixar</h1>
-        <p class="lead">Drop in your routes and ship fast.</p>
+  <body data-theme="autumn" class="min-h-screen text-base-content">
+    <div class="page-bg">
+      <header class="max-w-6xl mx-auto px-6 pt-6">
+        <div class="navbar glass rounded-2xl shadow-lg shadow-base-300/40">
+          <div class="flex-1 items-center gap-3">
+            <a class="btn btn-ghost text-xl font-display" href="/">YourName</a>
+            <span class="hidden md:inline text-xs uppercase tracking-[0.2em] text-neutral/60">
+              Product-focused Go engineer
+            </span>
+          </div>
+          <div class="flex-none hidden md:flex">
+            <ul class="menu menu-horizontal px-1 text-sm">
+              <li><a href="#work">Work</a></li>
+              <li><a href="#process">Process</a></li>
+              <li><a href="#stack">Stack</a></li>
+              <li><a href="/about">About</a></li>
+            </ul>
+          </div>
+          <div class="flex-none">
+            <a class="btn btn-primary btn-sm" href="#contact">Let&apos;s talk</a>
+          </div>
+        </div>
       </header>
 
-      <section class="card">
-        <h2>Available endpoints</h2>
-        <ul>
-          <li><a href="/">/</a> Home page</li>
-          <li><a href="/about">/about</a> About page</li>
-          <li><a href="/api/hello">/api/hello</a> JSON sample</li>
-          <li><a href="/health">/health</a> Health check</li>
-        </ul>
-      </section>
+      <main class="max-w-6xl mx-auto px-6 pb-20">
+        <section class="pt-14 pb-12">
+          <div class="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] items-center">
+            <div class="space-y-6">
+              <div class="badge badge-outline badge-accent uppercase tracking-[0.3em]">Portfolio</div>
+              <h1 class="text-4xl md:text-6xl font-display leading-tight">
+                I craft calm, resilient web experiences with Go and design rigor.
+              </h1>
+              <p class="text-lg text-neutral/70 max-w-xl">
+                I help teams shape product ideas into fast, reliable interfaces.
+                Strategy, Go architecture, and expressive UI in one loop.
+              </p>
+              <div class="flex flex-wrap gap-3">
+                <a class="btn btn-primary" href="#work">View work</a>
+                <a class="btn btn-outline" href="/about">Read my story</a>
+              </div>
+              <div class="stats stats-vertical sm:stats-horizontal bg-base-100 shadow">
+                <div class="stat">
+                  <div class="stat-title">Years building</div>
+                  <div class="stat-value text-primary">7+</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-title">Shipped products</div>
+                  <div class="stat-value">20+</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-title">Primary focus</div>
+                  <div class="stat-value text-accent">Go</div>
+                </div>
+              </div>
+            </div>
+            <div class="relative">
+              <div class="hero-orb"></div>
+              <div class="card bg-base-100/90 shadow-xl backdrop-blur">
+                <div class="card-body">
+                  <p class="text-xs uppercase tracking-[0.25em] text-neutral/60">Now</p>
+                  <h2 class="card-title font-display text-2xl">Currently crafting</h2>
+                  <p class="text-neutral/70">
+                    A workflow platform for creative studios with automation, calm UI, and warm data stories.
+                  </p>
+                  <div class="divider"></div>
+                  <div class="grid gap-3 text-sm">
+                    <div class="flex items-center justify-between">
+                      <span class="uppercase tracking-[0.2em] text-neutral/60 text-xs">Availability</span>
+                      <span class="font-semibold">Open in Q1</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                      <span class="badge badge-outline">Remote</span>
+                      <span class="badge badge-outline">Product strategy</span>
+                      <span class="badge badge-outline">Go services</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <footer class="footer">
-        <span>Template ready.</span>
+        <section id="work" class="py-12">
+          <div class="flex items-end justify-between gap-4 flex-wrap">
+            <div>
+              <h2 class="text-3xl font-display">Selected work</h2>
+              <p class="text-neutral/70">A snapshot of product, systems, and interface work.</p>
+            </div>
+            <a class="btn btn-sm btn-outline" href="/about">View timeline</a>
+          </div>
+          <div class="mt-6 grid gap-6 lg:grid-cols-3">
+            <article class="card bg-base-100 shadow-lg">
+              <div class="card-body">
+                <div class="flex items-center justify-between">
+                  <h3 class="card-title">Atlas Ops</h3>
+                  <span class="badge badge-primary">Go</span>
+                </div>
+                <p class="text-neutral/70">
+                  Observability suite with realtime traces and a human-readable incident timeline.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="badge badge-outline">Realtime</span>
+                  <span class="badge badge-outline">Multi-tenant</span>
+                  <span class="badge badge-outline">HTMX</span>
+                </div>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-ghost btn-sm">Case study</button>
+                </div>
+              </div>
+            </article>
+            <article class="card bg-base-100 shadow-lg">
+              <div class="card-body">
+                <div class="flex items-center justify-between">
+                  <h3 class="card-title">Dune Commerce</h3>
+                  <span class="badge badge-secondary">UX</span>
+                </div>
+                <p class="text-neutral/70">
+                  Checkout redesign and service refactor that lifted conversion by 28%.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="badge badge-outline">Design system</span>
+                  <span class="badge badge-outline">Go APIs</span>
+                  <span class="badge badge-outline">A/B testing</span>
+                </div>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-ghost btn-sm">Impact</button>
+                </div>
+              </div>
+            </article>
+            <article class="card bg-base-100 shadow-lg">
+              <div class="card-body">
+                <div class="flex items-center justify-between">
+                  <h3 class="card-title">Lumen Studio</h3>
+                  <span class="badge badge-accent">Design</span>
+                </div>
+                <p class="text-neutral/70">
+                  Editorial portfolio for a design collective with a calm, gallery-like flow.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="badge badge-outline">Brand system</span>
+                  <span class="badge badge-outline">Storytelling</span>
+                  <span class="badge badge-outline">Motion</span>
+                </div>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-ghost btn-sm">View site</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="process" class="py-12">
+          <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+            <div>
+              <h2 class="text-3xl font-display">How I work</h2>
+              <p class="text-neutral/70">
+                A tight loop that keeps product goals, systems, and UI aligned from day one.
+              </p>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="badge badge-outline">Discovery</span>
+                <span class="badge badge-outline">System design</span>
+                <span class="badge badge-outline">Prototyping</span>
+                <span class="badge badge-outline">Delivery</span>
+              </div>
+            </div>
+            <div class="grid gap-4">
+              <div class="card bg-base-100 shadow">
+                <div class="card-body">
+                  <h3 class="card-title">1. Map the experience</h3>
+                  <p class="text-neutral/70">
+                    Define the core journeys, metrics, and guardrails that keep the team aligned.
+                  </p>
+                </div>
+              </div>
+              <div class="card bg-base-100 shadow">
+                <div class="card-body">
+                  <h3 class="card-title">2. Build the system</h3>
+                  <p class="text-neutral/70">
+                    Design Go services and UI components together so scale feels natural.
+                  </p>
+                </div>
+              </div>
+              <div class="card bg-base-100 shadow">
+                <div class="card-body">
+                  <h3 class="card-title">3. Deliver &amp; iterate</h3>
+                  <p class="text-neutral/70">
+                    Ship in measured slices with feedback loops and living documentation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="stack" class="py-12">
+          <div class="grid gap-8 lg:grid-cols-[1fr_1fr]">
+            <div>
+              <h2 class="text-3xl font-display">Stack & strengths</h2>
+              <p class="text-neutral/70">Focused toolkit for reliable product delivery.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="badge badge-outline">Go</span>
+                <span class="badge badge-outline">Nixar</span>
+                <span class="badge badge-outline">Postgres</span>
+                <span class="badge badge-outline">HTMX</span>
+                <span class="badge badge-outline">DaisyUI</span>
+                <span class="badge badge-outline">Tailwind</span>
+                <span class="badge badge-outline">Figma</span>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow">
+              <div class="card-body">
+                <h3 class="card-title">What you can expect</h3>
+                <p class="text-neutral/70">
+                  Calm leadership, documentation that keeps teams aligned, and interfaces that feel inviting.
+                </p>
+                <div class="mt-4 grid gap-3 text-sm">
+                  <div class="flex items-center justify-between">
+                    <span class="uppercase tracking-[0.2em] text-neutral/60 text-xs">Response</span>
+                    <span class="font-semibold">Within 24 hours</span>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <span class="uppercase tracking-[0.2em] text-neutral/60 text-xs">Timezone</span>
+                    <span class="font-semibold">Tokyo / Remote</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="py-14">
+          <div class="card bg-base-100 shadow-xl">
+            <div class="card-body items-start gap-6 lg:flex-row lg:items-center lg:justify-between">
+              <div>
+                <h2 class="text-3xl font-display">Let&apos;s build something calm and resilient</h2>
+                <p class="text-neutral/70">
+                  Share your product vision, timeline, and constraints. I&apos;ll reply within two days.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-3">
+                <a class="btn btn-primary" href="mailto:hello@example.com">hello@example.com</a>
+                <a class="btn btn-outline" href="https://github.com/">GitHub</a>
+                <a class="btn btn-outline" href="https://www.linkedin.com/">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="max-w-6xl mx-auto px-6 pb-10 text-sm text-neutral/60">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <span>© 2024 YourName. Crafted with Go + DaisyUI.</span>
+          <a class="link link-hover" href="/about">More about me</a>
+        </div>
       </footer>
-    </main>
+    </div>
   </body>
 </html>

@@ -29,6 +29,8 @@
         buildInputs = [
           pkgs.go
           pkgs.gopls
+          pkgs.nodejs_20
+          pkgs.pnpm
         ];
       };
     };
