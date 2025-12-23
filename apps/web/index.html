@@ -317,6 +317,36 @@
     </div>
     <script>
       (function () {
+        var dropdowns = Array.prototype.slice.call(document.querySelectorAll(".dropdown"));
+        var closeDropdown = function (dropdown) {
+          var toggles = dropdown.querySelectorAll("[tabindex='0']");
+          toggles.forEach(function (toggle) {
+            if (toggle === document.activeElement) {
+              toggle.blur();
+            }
+          });
+          var openDetails = dropdown.querySelector("details[open]");
+          if (openDetails) {
+            openDetails.removeAttribute("open");
+          }
+        };
+
+        document.addEventListener("click", function (event) {
+          dropdowns.forEach(function (dropdown) {
+            if (!dropdown.contains(event.target)) {
+              closeDropdown(dropdown);
+            }
+          });
+        });
+
+        dropdowns.forEach(function (dropdown) {
+          dropdown.addEventListener("click", function (event) {
+            if (event.target.closest("a")) {
+              closeDropdown(dropdown);
+            }
+          });
+        });
+
         var imageTargets = Array.prototype.slice.call(document.querySelectorAll("img.img-fade"));
         var markLoaded = function (img) {
           img.classList.add("is-loaded");
