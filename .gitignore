@@ -1,3 +1,8 @@
 node_modules/
 tmp/
 .DS_Store
+static/*.png
+static/*.jpg
+static/*.jpeg
+static/*.webp
+static/*.heic
