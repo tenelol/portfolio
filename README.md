@@ -52,7 +52,7 @@ pnpm run watch:css
 
 ## Routes
 - `/` Home page
-- `/about` About page
+- `/work` Work page
 - `/api/hello` JSON sample
 - `/health` Health check
 - `/static/*` Static files

@@ -25,8 +25,8 @@ func main() {
 		ctx.HTMLFile(filepath.Join(*pagesDir, "index.html"))
 	})
 
-	app.Get("/about", func(ctx *framework.Context) {
-		ctx.HTMLFile(filepath.Join(*pagesDir, "about.html"))
+	app.Get("/work", func(ctx *framework.Context) {
+		ctx.HTMLFile(filepath.Join(*pagesDir, "work.html"))
 	})
 
 	app.Get("/api/hello", web.HelloAPI)
