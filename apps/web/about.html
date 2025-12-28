@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>プロフィール — YourName</title>
+    <title>作品一覧 — Tenelol</title>
     <link rel="icon" href="/static/neko.png" type="image/png" />
     <link rel="stylesheet" href="/static/app.css" />
   </head>
@@ -21,15 +21,14 @@
         </div>
       </div>
       <header class="sticky top-0 z-20 border-b border-base-300/60 bg-base-100/80 backdrop-blur">
-        <div class="navbar max-w-5xl mx-auto px-6">
+        <div class="navbar max-w-6xl mx-auto px-6">
           <div class="navbar-start">
-            <a class="text-xl font-display font-semibold" href="/">YourName</a>
+            <a class="text-xl font-display font-semibold" href="/">Tenelol</a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal gap-2">
               <li><a href="/">ホーム</a></li>
-              <li><a href="#profile">紹介</a></li>
-              <li><a href="#process">制作</a></li>
+              <li><a href="#projects">作品一覧</a></li>
               <li><a href="#contact">連絡</a></li>
             </ul>
           </div>
@@ -38,8 +37,7 @@
               <label tabindex="0" class="btn btn-ghost">Menu</label>
               <ul tabindex="0" class="menu dropdown-content mt-3 w-44 rounded-box bg-base-100 p-2 shadow">
                 <li><a href="/">ホーム</a></li>
-                <li><a href="#profile">紹介</a></li>
-                <li><a href="#process">制作</a></li>
+                <li><a href="#projects">作品一覧</a></li>
                 <li><a href="#contact">連絡</a></li>
               </ul>
             </div>
@@ -47,94 +45,85 @@
         </div>
       </header>
 
-      <main class="relative z-10 max-w-5xl mx-auto px-6 py-10 space-y-16">
-        <section id="profile" class="space-y-6">
-          <div class="card border border-base-300/60 bg-base-100 shadow-sm">
-            <div class="card-body gap-4 md:flex-row md:items-center md:justify-between">
-              <div class="space-y-2">
-                <p class="text-xs uppercase tracking-[0.3em] text-base-content/50">Profile</p>
-                <h1 class="text-4xl">YourName</h1>
-                <p class="text-base-content/70">絵とデザインのあいだ</p>
-              </div>
-              <div class="flex flex-wrap gap-2">
-                <span class="badge badge-outline">Drawing</span>
-                <span class="badge badge-outline">Digital</span>
-                <span class="badge">Exhibition</span>
-              </div>
-            </div>
+      <main class="relative z-10 max-w-6xl mx-auto px-6 py-10 space-y-16">
+        <section id="projects" class="space-y-6">
+          <div class="space-y-3">
+            <p class="text-xs uppercase tracking-[0.3em] text-base-content/50">Projects</p>
+            <h1 class="text-4xl md:text-5xl">作品一覧</h1>
+            <p class="text-base-content/70">
+              記事・プロダクト・イラストなど、公開できるものをまとめています。新しい作品は随時追加予定。
+            </p>
           </div>
-          <p class="text-base-content/70 leading-relaxed">
-            静かな配色と、余白のある構成を意識して制作しています。展示や依頼制作の記録をシンプルにまとめています。
-          </p>
-        </section>
-
-        <section id="process" class="space-y-6">
-          <div>
-            <h2 class="text-2xl">制作について</h2>
-            <p class="mt-2 text-base-content/70">小さな気配を拾い、形にしていく時間が好きです。</p>
+          <div class="grid gap-6 md:grid-cols-2">
+            <article class="card border border-base-300/60 bg-base-100 shadow-md">
+              <figure class="px-6 pt-6">
+                <a href="https://zenn.dev/tenelol/articles/417a294de03c5c" aria-label="Zenn記事を開く">
+                  <img
+                    class="rounded-2xl"
+                    src="https://res.cloudinary.com/zenn/image/upload/s--K0O3dSRo--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:NixOS%25E3%2582%2592Cloudflare%2520Tunnel%25E7%25B5%258C%25E7%2594%25B1%25E3%2581%25A7%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E5%258C%2596%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:TENER%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2Y5NDFiYzk2ZTMuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT"
+                    alt="Zenn記事のOGP"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </a>
+              </figure>
+              <div class="card-body">
+                <p class="text-xs uppercase tracking-[0.25em] text-base-content/50">2025 · Editorial</p>
+                <h3 class="card-title">NixOSをCloudflare Tunnel経由でサーバー化した話</h3>
+                <p class="text-base-content/70">#NixOS #Cloudflare</p>
+                <div class="card-actions">
+                  <a class="link link-hover" href="https://zenn.dev/tenelol/articles/417a294de03c5c">記事を見る →</a>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="badge badge-primary badge-outline">Zenn</span>
+                  <span class="badge badge-outline">Article</span>
+                </div>
+              </div>
+            </article>
+            <article class="card border border-base-300/60 bg-base-100 shadow-md">
+              <figure class="px-6 pt-6">
+                <a href="https://github.com/tenelol/Nixar" aria-label="Nixarリポジトリを開く">
+                  <img
+                    class="rounded-2xl"
+                    src="https://opengraph.githubassets.com/1/tenelol/Nixar"
+                    alt="NixarリポジトリのOGP"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </a>
+              </figure>
+              <div class="card-body">
+                <p class="text-xs uppercase tracking-[0.25em] text-base-content/50">2025 · Branding</p>
+                <h3 class="card-title">Nixar</h3>
+                <p class="text-base-content/70">Nix/NixOS環境での再現性を前提に設計された、最小構成志向のGo製Webフレームワーク</p>
+                <div class="card-actions">
+                  <a class="link link-hover" href="https://github.com/tenelol/Nixar">リポジトリを見る →</a>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="badge badge-primary badge-outline">GitHub</span>
+                  <span class="badge badge-outline">Open Source</span>
+                </div>
+              </div>
+            </article>
           </div>
-          <div class="grid gap-4 md:grid-cols-2">
-            <div class="rounded-2xl border border-base-300/60 bg-base-100 p-5 text-base-content/70">
-              作品は、アナログのドローイングとデジタルの編集を行き来しながら仕上げています。
-              色数は抑えつつ、紙の質感や線の強弱が残るように調整しています。
-            </div>
-            <div class="rounded-2xl border border-base-300/60 bg-base-100 p-5">
-              <p class="text-sm uppercase tracking-[0.2em] text-base-content/50">Focus</p>
-              <div class="mt-3 flex flex-wrap gap-2">
-                <span class="badge badge-outline">Drawing</span>
-                <span class="badge badge-outline">Digital</span>
-                <span class="badge badge-outline">Exhibition</span>
-                <span class="badge">Book</span>
-              </div>
-              <p class="mt-4 text-base-content/70">素材や線の温度感を大切にしています。</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="space-y-6">
-          <div>
-            <h2 class="text-2xl">これまで</h2>
-            <p class="mt-2 text-base-content/70">活動の記録や参加したプロジェクトの概要。</p>
-          </div>
-          <ul class="timeline timeline-vertical">
-            <li>
-              <div class="timeline-start text-sm text-base-content/60">2024</div>
-              <div class="timeline-middle">
-                <span class="badge badge-primary badge-xs"></span>
-              </div>
-              <div class="timeline-end">個展「静かな境界」を開催。</div>
-            </li>
-            <li>
-              <div class="timeline-start text-sm text-base-content/60">2023</div>
-              <div class="timeline-middle">
-                <span class="badge badge-primary badge-xs"></span>
-              </div>
-              <div class="timeline-end">書籍装丁の挿絵を担当。</div>
-            </li>
-            <li>
-              <div class="timeline-start text-sm text-base-content/60">2022</div>
-              <div class="timeline-middle">
-                <span class="badge badge-primary badge-xs"></span>
-              </div>
-              <div class="timeline-end">展示企画に参加、作品集を制作。</div>
-            </li>
-          </ul>
+          <p class="text-sm text-base-content/60">新しい作品を追加したらここに並べていく予定です。</p>
         </section>
 
         <section id="contact" class="space-y-6">
           <div>
             <h2 class="text-2xl">連絡</h2>
-            <p class="mt-2 text-base-content/70">制作依頼や展示のお誘いはこちらへ。</p>
+            <p class="mt-2 text-base-content/70">制作依頼や相談はこちらへ。</p>
           </div>
           <div class="card border border-base-300/60 bg-base-100 shadow-sm">
             <div class="card-body flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
               <div class="space-y-1">
                 <p class="text-sm uppercase tracking-[0.2em] text-base-content/50">Contact</p>
-                <p class="text-lg font-semibold">hello@example.com</p>
+                <p class="text-lg font-semibold">tenelol@tenelol.dev</p>
               </div>
               <div class="flex flex-wrap gap-2">
-                <a class="btn btn-primary" href="mailto:hello@example.com">メールする</a>
-                <a class="btn btn-ghost" href="https://www.instagram.com/">Instagram</a>
+                <a class="btn btn-primary" href="mailto:tenelol@tenelol.dev">メールする</a>
+                <a class="btn btn-ghost" href="https://www.instagram.com/tenel0l">Instagram</a>
+                <a class="btn btn-ghost" href="https://x.com/tenelol/">X</a>
               </div>
             </div>
           </div>
@@ -142,8 +131,8 @@
       </main>
 
       <footer class="relative z-10 border-t border-base-300/60">
-        <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col gap-2 md:flex-row md:items-center md:justify-between text-sm text-base-content/60">
-          <span>© 2024 YourName</span>
+        <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col gap-2 md:flex-row md:items-center md:justify-between text-sm text-base-content/60">
+          <span>© 2025 Tenelol</span>
           <a class="link link-hover" href="/">ホームへ戻る</a>
         </div>
       </footer>
